@@ -1,0 +1,8 @@
+# rem-memory bundle
+#
+# Installed through `dsh plugin add`, this row enters the plugin tree.
+# It only inserts the plugin; it does not override any existing configuration.
+- insert:
+    - id: rem-memory
+      name: rem-memory
+      config: {}
