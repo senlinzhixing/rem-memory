@@ -22,7 +22,7 @@ vm.runInThisContext(code, { filename: 'lib/client.js' })
 
 assert.equal(captured.length, 1, 'client bundle must register exactly one loader entry')
 const entry = captured[0]
-assert.equal(entry.id, 'dsh-rem', 'loader entry id must equal the package name')
+assert.equal(entry.id, 'rem-memory', 'loader entry id must equal the package name')
 assert.equal(typeof entry.factory, 'function')
 
 const plugin = entry.factory(spec => require(spec))
